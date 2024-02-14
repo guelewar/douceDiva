@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #191117;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #FDD1EA;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.presentation {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.presentation-title {
+  font-size: 4rem;
+  color: #FDD1EA;
+}
+
+.presentation-text {
+  font-size: 2rem;
+  color: #FF8DCC;
+  margin-bottom: 20px;
+}
+
+.presentation-subtext {
+  font-size: 1.5rem;
+  color: #833869;
+  margin-bottom: 30px;
+}
+
+.presentation-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  font-size: 1.5rem;
+  color: #FF8DCC;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  margin-bottom: 40px;
+}
+
+.btn {
+  all: unset;
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: #DE51A8;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #833869;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #A84885;
+}
+
+.btn-secondary:hover {
+  background-color: #A84885;
+}
+
+.video-container {
+  margin-bottom: 40px;
+}
+
+iframe {
+  width: 800px;
+  border-radius: 0.5rem;
+}
+
+.quote-container {
+  margin-bottom: 40px;
+}
+
+.customer-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #FF8DCC;
+}
+
+.customer-quote cite {
+  display: block;
+  margin-top: 10px;
+}
+
+.social-media {
+  margin-bottom: 40px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icon {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #DE51A8;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: solid 1px #FDD1EA;
+}
+
+.social-icon:hover {
+  background-color: #FF8DCC;
+}
+
+.newsletter {
+  margin-bottom: 40px;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  color: #FDD1EA;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+  all: unset;
+  font-family: "Ubuntu", sans-serif;
+  text-align: start;
+  color: #FDD1EA;
+  width: 250px;
+  padding: 10px;
+  font-size: 19px;
+  border: 1px solid #833869;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #833869;
+}
+
+.newsletter-form button {
+  all: unset;
+  font-family: "Ubuntu", sans-serif;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #DE51A8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #A84885;
+}
+
+/* animation on scroll */
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+
+  .hidden-left,
+  .hidden-right {
+    transition: none;
+  }
+}
+
+/* end animation on scroll */
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .presentation {
+    text-align: start;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .presentation-title {
+    font-size: 2rem;
+  }
+
+  .presentation-text {
+    font-size: 1.3rem;
+  }
+
+  .presentation-subtext {
+    font-size: 1rem;
+  }
+
+  .presentation-image {
+    margin-bottom: 20px;
+  }
+
+  .benefits-list li {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 13px 23px;
+    font-size: 1.1rem;
+    border-radius: 0.6rem;
+  }
+
+  .btn-secondary {
+    margin-left: 5px;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 0.5rem;
+  }
+
+  .customer-quote {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+
+  .newsletter h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .newsletter-form input[type="email"] {
+    max-width: 170px;
+    font-size: 16px;
+  }
+
+  .newsletter-form button {
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+}
